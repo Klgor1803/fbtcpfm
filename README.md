@@ -7,13 +7,10 @@ Freebitco.in number generation algorithm:
 
 ```
 string1=b'nonce:server_seed:nonce'
+string2=b'nonce:client_seed:nonce'
+hmac=HMAC_SHA512(message=string1,key=string2).digest()
+number=round(int(hmac[:4])/429496.7295)
 ```
-
-```string2=b'nonce:client_seed:nonce'```
-
-```hmac=HMAC_SHA512(message=string1,key=string2).digest()```
-
-```number=round(int(hmac[:4])/429496.7295)```
 
 Example:
 
