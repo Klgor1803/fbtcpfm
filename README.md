@@ -31,6 +31,7 @@ verify [here](https://s3.amazonaws.com/roll-verifier/verify.html?server_seed=30d
 
 Now, let's say you want the number 10000
 Server_seed='00e0cc052d9721b4a7adcda47b2c5469f8b6c685860df214bc4506f76ca9ca8d'
+
 Nonce=630
 
 ```
