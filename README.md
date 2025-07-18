@@ -33,11 +33,14 @@ Now, let's say you want the number 10000
 Server_seed='00e0cc052d9721b4a7adcda47b2c5469f8b6c685860df214bc4506f76ca9ca8d'
 Nonce=630
 
-```~ $ python pfc.py
+```
+~ $ python pfc.py
 Nonce: 630
 Number you want: 10000
 Server seed: 00e0cc052d9721b4a7adcda47b2c5469f8b6c685860df214bc4506f76ca9ca8d
-5840a37d```
+5840a37d
+```
 
 5840a37d is (one of) the client seed you would use to get the number 10000 with that server seed and nonce
 
+verify [here](https://s3.amazonaws.com/roll-verifier/verify.html?server_seed=00e0cc052d9721b4a7adcda47b2c5469f8b6c685860df214bc4506f76ca9ca8d&client_seed=5840a37d&server_seed_hash=0dbccb2c616135da003fb4856e8217ab1c3cb7cedc2cdfbd7424058991671a21&nonce=630)
