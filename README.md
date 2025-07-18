@@ -5,7 +5,9 @@ This code needs the server seed to work, freebitco.in only shows it's hash preci
 
 Freebitco.in number generation algorithm:
 
-```string1=b'nonce:server_seed:nonce'```
+```
+string1=b'nonce:server_seed:nonce'
+```
 
 ```string2=b'nonce:client_seed:nonce'```
 
