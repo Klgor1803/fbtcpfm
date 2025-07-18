@@ -5,13 +5,13 @@ This code needs the server seed to work, freebitco.in only shows it's hash preci
 
 Freebitco.in number generation algorithm:
 
-`string1=b'nonce:server_seed:nonce'`
+```string1=b'nonce:server_seed:nonce'```
 
-`string2=b'nonce:client_seed:nonce'`
+```string2=b'nonce:client_seed:nonce'```
 
-`hmac=HMAC_SHA512(message=string1,key=string2).digest()`
+```hmac=HMAC_SHA512(message=string1,key=string2).digest()```
 
-`number=round(int(hmac[:4])/429496.7295)`
+```number=round(int(hmac[:4])/429496.7295)```
 
 Example:
 
